@@ -40,7 +40,7 @@ button:hover{
         'asideFooter'
         'footer';
         gap: 5px;
-        grid-template-rows: 10vh 10vh 30vh 55vh 0vh 10vh;
+        grid-template-rows: 10vh 10vh 30vh 60vh 0vh 10vh;
     }
 }
 body > *{
