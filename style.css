@@ -1,0 +1,284 @@
+/*Reset*/
+body button, p{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+button:hover{
+    cursor:pointer;
+}
+@media (min-width: 601px) {
+    body{
+        display: grid;
+        background-color: #FCE6A8;
+        grid-template-areas: 
+        'nav titulo'
+        'main main'
+        'footer footer';
+        gap: 5px;
+        grid-template-rows: 15vh 67vh 15vh;
+        grid-template-columns: 25vw 74vw;
+    }
+}
+@media (max-width: 600px) {
+    body{
+        display: grid;
+        background-color: #FCE6A8;
+        grid-template-areas: 
+        'nav'
+        'titulo'
+        'main'
+        'footer';
+        gap: 5px;
+        grid-template-rows: 10vh 10vh 100vh 10vh;
+    }
+}
+body > *{
+    background-color: #D2E4E1;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    background-color: #788896;
+    padding: 1.5vh 1.5vw;
+    font-size: 200%;
+    border-radius: 15px;
+}
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 350%;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+@media (min-width: 601px) {
+    .main > *{
+        background-color: #E3E8ED;
+        width: 33vw;
+        height: 40vh;
+        padding: 15px;
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .main > *{
+        background-color: #E3E8ED;
+        width: 77vw;
+        height: 40vh;
+        padding: 15px;
+        gap: 15px;
+    }
+}
+@media (min-width: 601px) {
+    .boxSoma{
+        display: flex;
+    }
+}
+@media (max-width: 600px) {
+    .boxSoma{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 601px) {
+    .box_Soma_Interacao{
+        width: 16.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 600px) {
+    .box_Soma_Interacao{
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 601px) {
+    .box_Soma_Interacao > *{
+        width: 10vw;
+        height: 4.5vh;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 600px) {
+    .box_Soma_Interacao > *{
+        height: 4.5vh;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+@media (min-width: 601px) {
+    .box_Soma_Interacao button{
+        text-decoration: none;
+        color: white;
+        background-color: #788896;
+        height: 5.5vh;
+        width: 10.35vw;
+    }
+}
+@media (max-width: 600px) {
+    .box_Soma_Interacao button{
+        text-decoration: none;
+        color: white;
+        background-color: #788896;
+        height: 5.5vh;
+    }
+}
+@media (min-width: 601px) {
+    .boxSoma_Resultado{
+        padding: 1vh;
+        width: 16.5vw;
+        background-color: #CED8E0;
+        border: solid #788896 3px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .boxSoma_Resultado{
+        padding: 1vh;
+        background-color: #CED8E0;
+        border: solid #788896 3px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+.boxSoma_Resultado_Resolvido{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15vh;
+}
+@media (min-width: 601px) {
+    .boxPokemon{
+        display: flex;
+    }
+}
+@media (max-width: 600px) {
+    .boxPokemon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 601px) {
+    .boxPokemon_Interacao{
+        width: 16.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 600px) {
+    .boxPokemon_Interacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;  
+        gap: 2px;
+    }
+}
+@media (min-width: 601px) {
+    .boxPokemon_Interacao > *{
+        width: 10vw;
+        height: 4.5vh;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 600px) {
+    .boxPokemon_Interacao > *{
+        height: 4.5vh;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+@media (min-width: 601px) {
+    .boxPokemon_Interacao button{
+        text-decoration: none;
+        color: white;
+        background-color: #788896;
+        height: 5.5vh;
+        width: 10.35vw;
+    }
+}
+@media (max-width: 600px) {
+    .boxPokemon_Interacao button{
+        text-decoration: none;
+        color: white;
+        background-color: #788896;
+        height: 5.5vh;
+    }
+}
+@media (min-width: 601px) {
+    .boxPokemon_Resultado{
+        padding: 1vh;
+        width: 16.5vw;
+        background-color: #CED8E0;
+        border: solid #788896 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .boxPokemon_Resultado{
+        padding: 1vh;
+        background-color: #CED8E0;
+        border: solid #788896 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+    }
+}
+@media (min-width: 601px) {
+    .boxPokemon_Resultado_imagem{
+        height: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .boxPokemon_Resultado_imagem{
+        height: 100%;
+    }
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

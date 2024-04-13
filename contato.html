@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="./index.html">Principal</a>
+        <a href="./contato.html">Contato</a>
+    </div>
+    <div class="titulo">Treinando</div>
+    <aside class="aside">
+        <img src="https://media.licdn.com/dms/image/D4D03AQF7duii5dpjMw/profile-displayphoto-shrink_800_800/0/1700514556801?e=1718236800&v=beta&t=dGOPX8XVwlaJdIGct_bHtODy2ef2J4KBhTnnem-oj4M" alt="">
+        <div class="link">
+            <a href="https://www.linkedin.com/in/wagner-worst-229986129/">Linkedin</a>
+            <a href="https://github.com/wagnerworst">GitHub</a>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="formulario">
+            <div class="formularioNomeCompleto">
+                <input type="text" class="formulario_Nome" name="formulario_Nome" id="formulario_Nome" placeholder="Nome">
+                <input type="text" class="formulario_Sobrenome" name="formulario_Sobrenome" id="formulario_Sobrenome" placeholder="Sobrenome">
+            </div>
+            <input type="text" class="formulario_Email" name="formulario_Email" id="formulario_Email" placeholder="E-mail">
+            <input type="text-area" class="formulario_Mensagem" name="formulario_Mensagem" id="formulario_Mensagem" placeholder="Mensagem">
+            <button class="Enviar" onclick="postApiContato()">Enviar</button>
+            <p class="spanAcaoBotaoEnviar"></p>
+        </div>
+    </main>
+    <footer class="asideFooter"></footer>
+    <footer class="footer">
+        <p>Criado Por:</p>
+        <p>Wagner Willian Worst</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>

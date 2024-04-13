@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid Flex JS Html e CSS</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="./index.html">Principal</a>
+        <a href="./contato.html">Contato</a>
+    </div>
+    <div class="titulo">Treinando</div>
+    <main class="main">
+        <div class="boxSoma">
+            <div class="box_Soma_Interacao">
+                <input type="text" class="box_Soma_Interacao_input" name="box_Soma_Interacao_Numero1" id="box_Soma_Interacao_Numero1" placeholder="Digite um número">
+                <input type="text" class="box_Soma_Interacao_input" name="box_Soma_Interacao_Numero2" id="box_Soma_Interacao_Numero2" placeholder="Digite um número">
+                <button class="box_Soma_Interacao_botao" onclick="somarDoisNumeros()">Somar</button>
+            </div>
+            <div class="boxSoma_Resultado">
+                Resultado:
+                <div class="boxSoma_Resultado_Resolvido">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="boxPokemon">
+            <div class="boxPokemon_Interacao">
+                <input type="text"  class="boxPokemon_interacao_input" name="boxPokemon_interacao_input" id="boxPokemon_interacao_input" placeholder="Id Pokemon">
+                <button class="boxPokemon_Interacao_botao" onclick="buscarPokemon()">Buscar</button>
+            </div>
+            <div class="boxPokemon_Resultado">
+                <div class="boxPokemon_Resultado_nome"></div>
+                <img class="boxPokemon_Resultado_imagem" src="" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Criado Por:</p>
+        <p>Wagner Willian Worst</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
