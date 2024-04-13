@@ -118,9 +118,8 @@ body > *{
         text-decoration: none;
         color: white;
         background-color: #788896;
-        margin-left: 10px;
-        padding: 10px 10px;
-        width: 34vw;
+        padding: 10px 15px;
+        width: 36vw;
         font-size: 35px;
         border-radius: 15px;
         text-align: center;
@@ -139,7 +138,8 @@ body > *{
     .link{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        gap: 1.5vw;
     }
 }
 @media (min-width: 601px) {
